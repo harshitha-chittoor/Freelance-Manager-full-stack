@@ -1,0 +1,234 @@
+.recent-invoices {
+
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    padding: 26px;
+
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+
+}
+
+/* Header */
+
+.recent-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 24px;
+
+}
+
+.recent-header h2 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #0f172a;
+
+}
+
+/* View All Button */
+
+.view-all-btn {
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border: 1px solid #bfdbfe;
+
+    padding: 9px 18px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+}
+
+.view-all-btn:hover {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+/* Invoice List */
+
+.invoice-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+}
+
+/* Single Invoice Card */
+.invoice-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:18px 22px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:14px;
+
+    background:white;
+
+    transition:.25s;
+
+}
+
+.invoice-item:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+
+}
+
+/* Left */
+
+.invoice-left{
+
+    width:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.invoice-id {
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #2563eb;
+
+}
+
+.invoice-client {
+
+    font-size: 14px;
+
+    color: #64748b;
+
+}
+
+/* Middle */
+
+.invoice-middle{
+
+    width:180px;
+
+}
+
+.invoice-amount {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #0f172a;
+
+}
+
+.invoice-date {
+
+    margin-top: 4px;
+
+    font-size: 13px;
+
+    color: #94a3b8;
+
+}
+
+/* Status Badge */
+
+.invoice-status {
+    margin-left: auto;
+}
+
+.invoice-status.paid {
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+}
+
+.invoice-status.pending {
+
+    background: #fef3c7;
+
+    color: #b45309;
+
+}
+
+.invoice-status.overdue {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .invoice-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 14px;
+
+    }
+
+    .invoice-middle {
+
+        text-align: left;
+
+    }
+
+    .recent-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+    }
+
+}

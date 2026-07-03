@@ -1,0 +1,208 @@
+.activity-card{
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+    height:360px;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.activity-card h2{
+
+    font-size:24px;
+
+    color:#0f172a;
+
+}
+
+.activity-subtitle{
+
+    color:#64748b;
+
+    font-size:14px;
+
+    margin:6px 0 24px;
+
+}
+
+.activity-list{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding-right:6px;
+}
+.activity-list::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.activity-list::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.activity-list::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}
+.activity-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.activity-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+}
+
+.activity-item h4{
+
+    font-size:15px;
+
+    margin-bottom:4px;
+
+    color:#0f172a;
+
+}
+
+.activity-item span{
+
+    font-size:13px;
+
+    color:#94a3b8;
+
+}
+.activity-icon.green{
+    background:#dcfce7;
+    color:#16a34a;
+}
+
+.activity-icon.blue{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.activity-icon.purple{
+    background:#ede9fe;
+    color:#7c3aed;
+}
+
+.activity-icon.orange{
+    background:#ffedd5;
+    color:#ea580c;
+}
+.activity-item{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    padding:10px;
+    border-radius:12px;
+
+    transition:.25s;
+}
+
+.activity-item:hover{
+
+    background:#f8fafc;
+}
+.activity-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:24px;
+
+}
+
+.live-status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#16a34a;
+
+}
+
+.live-dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    animation:pulse 1.8s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    50%{
+        transform:scale(1.4);
+        opacity:.5;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}

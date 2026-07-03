@@ -1,0 +1,66 @@
+.proposals-page {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* controls ALL vertical spacing */
+}
+
+/* middle row (pipeline + insights) */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start; /* IMPORTANT FIX */
+}
+/* remove unwanted spacing from child containers */
+.proposals-page h1,
+.proposals-page h2,
+.proposals-page h3 {
+  margin: 0 0 8px 0;
+}
+
+.proposals-page p {
+  margin: 4px 0;
+}
+.pipeline-container,
+.insights-container {
+  display: flex;
+  flex-direction: column;
+}
+.pipeline-container,
+.insights-container {
+  display: block;
+  height: auto;
+  flex: none;
+}
+
+/* IMPORTANT: remove accidental large margins */
+.proposals-page > * {
+  margin: 0;
+}
+.proposal-activity {
+  margin-top: 0;
+}
+.generate-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:7px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:8px;
+}
+
+.generate-btn:hover{
+    background:#1d4ed8;
+}
+
+.generated-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:7px 14px;
+    border-radius:6px;
+    margin-right:8px;
+    cursor:not-allowed;
+}

@@ -1,0 +1,112 @@
+.insights-container {
+  padding: 20px;
+  background: #fafafa;
+}
+
+/* Title */
+.insights-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Top cards grid */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* Card base */
+.insight-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.insight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Highlight main card */
+.highlight {
+  background: linear-gradient(135deg, #111, #333);
+  color: white;
+  border: none;
+}
+
+.insight-card p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.insight-card h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.insight-card h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* List section */
+.insights-list {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.insights-list h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Each row */
+.insight-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.insight-row:hover {
+  background: #f9f9f9;
+}
+
+.insight-row:last-child {
+  border-bottom: none;
+}
+
+/* Score badge */
+.score {
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* Good score */
+.good {
+  background: #e8f7ee;
+  color: #1a7f37;
+}
+
+/* Bad score */
+.bad {
+  background: #fde8e8;
+  color: #c62828;
+}

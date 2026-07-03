@@ -1,0 +1,68 @@
+.proposal-activity {
+  margin-top: 30px;
+}
+
+.proposal-activity h2 {
+  margin-bottom: 20px;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.activity-dot {
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: #4f46e5;
+}
+
+.activity-content h4 {
+  margin: 0;
+  color: #222;
+}
+
+.activity-content p {
+  margin: 6px 0;
+  color: #666;
+}
+
+.activity-content small {
+  color: #999;
+}
+
+.status.accepted {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.status.pending {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.status.rejected {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.empty-activity {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  color: #777;
+}
